@@ -1,0 +1,8 @@
+For Ubuntu 18.4 (64bit), just use apt intall the toolchain:
+
+Reference: https://www.beyondlogic.org/compiling-u-boot-with-device-tree-support-for-the-raspberry-pi/
+
+###
+apt install gcc-aarch64-linux-gnu
+make CROSS_COMPILE=aarch64-linux-gnu- rpi_3_defconfig
+make CROSS_COMPILE=aarch64-linux-gnu- u-boot.bin
